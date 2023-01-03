@@ -1,23 +1,32 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "target": "es5",
-    "baseUrl": "src",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "module": "es2015",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "jsx": "react",
+    "outDir": "artifacts",
+    "rootDir": "src",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true
+    "lib": ["es6"],
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext"
   },
-  "include": ["**/*.ts", "**/*.tsx", "src"],
-  "exclude": ["node_modules"]
+  "types": ["react", "react-native", "jest"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"],
+  "compileOnSave": false
 }
 
