@@ -1,5 +1,6 @@
 {
   "expo": {
+    "entryPoint": "./src",
     "name": "expo-rn-typescript",
     "slug": "expo-rn-typescript",
     "version": "1.0.0",
